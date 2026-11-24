@@ -1,0 +1,147 @@
+{
+  "source": "https://github.com/rspeer/wordfreq",
+  "version": "3.1.1",
+  "data_license": "CC-BY-SA-4.0",
+  "max_words": 30000,
+  "max_prefix": 4,
+  "sources": {
+    "en": {
+      "file": "large_en.msgpack.gz",
+      "sha256": "dffae8066b78dce0a6667cf5f58e567054f902674667090a7ac8a8a44628b05c"
+    },
+    "de": {
+      "file": "large_de.msgpack.gz",
+      "sha256": "8ef04d3f4a28fb48d800d25fa80a96d90a5f80c8496c9a453f99f887c6ad3c12"
+    },
+    "es": {
+      "file": "large_es.msgpack.gz",
+      "sha256": "14f326b4f68d517f9b8b99c1e26ef56a508d2dc8d0ee7a9e6e8732ddab1aa65e"
+    },
+    "fr": {
+      "file": "large_fr.msgpack.gz",
+      "sha256": "6f16cd80b9b66c5698ed002becea83ae30d0584c3205f1cf01714ad562c00c8b"
+    },
+    "it": {
+      "file": "large_it.msgpack.gz",
+      "sha256": "0b5500e425a50e0f1fefb256d9125e74f586ac6b2f2a6e41bc96634bd5613cc7"
+    },
+    "pt": {
+      "file": "large_pt.msgpack.gz",
+      "sha256": "7d764586bca6262f554d5fa77ad8e6841ef42534776e70558065140853660ce2"
+    },
+    "nl": {
+      "file": "large_nl.msgpack.gz",
+      "sha256": "cfdae01b2ccd5bc94be046645b6ba8682e65d6709beedf6ab98d7bdc5414d671"
+    },
+    "sv": {
+      "file": "large_sv.msgpack.gz",
+      "sha256": "16971de5b9c6731b0dc3647743f93357bd7ead336f783aa3f747db6855e36a90"
+    },
+    "da": {
+      "file": "small_da.msgpack.gz",
+      "sha256": "80db682ff7bb30e7c8fd3e5dac2b9fe8c12faa206c45438f1a799a048ab10d8b"
+    },
+    "nb": {
+      "file": "large_nb.msgpack.gz",
+      "sha256": "8ac61baa0d7619b2d7529dcab18b6ad32e5f8915a1bf8619fe25779a2ad8386f"
+    },
+    "fi": {
+      "file": "large_fi.msgpack.gz",
+      "sha256": "98fb498142d5cb4ff47df65d6c4784dff4fa2fc6d191a0b26cf6341101922151"
+    }
+  },
+  "minimum_zipf": 2.5,
+  "maximum_cross_language_frequency_ratio": 20,
+  "generated": {
+    "esWords.txt": {
+      "sha256": "249b5089f206d8090c2545ef3439ed91f2ad00d4cbac9d4125340f381b2de0ea",
+      "entries": 30000,
+      "bytes": 266494
+    },
+    "esCompletions.txt": {
+      "sha256": "1ca9f28d63065d2ef70676768051299d22731958149f5f0877f4cc9fd39577ec",
+      "entries": 8586,
+      "bytes": 292467
+    },
+    "frWords.txt": {
+      "sha256": "0e4ff0ca29e2e770458d3344a214695d3f859415699b758eb197211b5dd54d98",
+      "entries": 30000,
+      "bytes": 267768
+    },
+    "frCompletions.txt": {
+      "sha256": "876d15d5100bc9dbbf21163d6cdf888e055559d43ea4a2f88d3a0a7868021263",
+      "entries": 9179,
+      "bytes": 319044
+    },
+    "itWords.txt": {
+      "sha256": "35255d2140802e01ce29a5b361600c6623b8cba5acea0848aa53c12556cbe06c",
+      "entries": 30000,
+      "bytes": 268391
+    },
+    "itCompletions.txt": {
+      "sha256": "66faac4e09f2916f4fff4a74bf623b5d481c9dcbeda0a1df05105f804e7b3f5a",
+      "entries": 7128,
+      "bytes": 259481
+    },
+    "ptWords.txt": {
+      "sha256": "4b2b1e998b40b0175ecf661eadf4be7cb9ee5e0f65646c0976e03828ecadf3bf",
+      "entries": 30000,
+      "bytes": 263742
+    },
+    "ptCompletions.txt": {
+      "sha256": "ef6bf0b780580d196464e66aa038161305292563b5f3c01af17465d14919847f",
+      "entries": 9462,
+      "bytes": 302727
+    },
+    "nlWords.txt": {
+      "sha256": "cd2a456071c8c09ebdd15b2e5de10b6953539859c47445a7fe178dcab6174ec5",
+      "entries": 30000,
+      "bytes": 265464
+    },
+    "nlCompletions.txt": {
+      "sha256": "d183e8ae70f391ab5269361cd434ea2ed4777071c666342a40367d9ce3bb150b",
+      "entries": 9750,
+      "bytes": 314263
+    },
+    "svWords.txt": {
+      "sha256": "7dc09f14d64e7808e77081dbcca5ed76d89a57cea788f7cd92db1c3c057b1ef4",
+      "entries": 30000,
+      "bytes": 264255
+    },
+    "svCompletions.txt": {
+      "sha256": "62607d7ac6f6f3f5bfaad9aa20f130f02b1f7d8a7eb67acd08597ec39744ccbf",
+      "entries": 9989,
+      "bytes": 341945
+    },
+    "daWords.txt": {
+      "sha256": "8fafe02958306e61cf83f0ebf17ebe0043519abee5425fe3022e5fad7603f194",
+      "entries": 27693,
+      "bytes": 240380
+    },
+    "daCompletions.txt": {
+      "sha256": "24f5046086728152e124ded3b1d4f2230a30ec57eaf48b7585bbdcc5914eed32",
+      "entries": 9651,
+      "bytes": 323516
+    },
+    "nbWords.txt": {
+      "sha256": "70fe2685424b784c113fa886151aa6603bb0d3c2b62a66ca57212cb6016e4184",
+      "entries": 30000,
+      "bytes": 263372
+    },
+    "nbCompletions.txt": {
+      "sha256": "1ea7b68004dbcd68e928026e5d37b3b10afba4d4f703270e8e29871a5b61646c",
+      "entries": 9765,
+      "bytes": 327347
+    },
+    "fiWords.txt": {
+      "sha256": "0b84879b414bbe2c9146559c512f529b7fafe644ceb8ffc97ea4d93c9e1acfce",
+      "entries": 30000,
+      "bytes": 288368
+    },
+    "fiCompletions.txt": {
+      "sha256": "0809372d8c783591b1a4f2569b47bf2bf6670b7d801669f6efe9aa78d815eecd",
+      "entries": 6560,
+      "bytes": 259111
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>PreferenceSpecifiers</key><array>
+        <dict><key>Type</key><string>PSGroupSpecifier</string><key>Title</key><string>PrivateType typing options</string>
+            <key>FooterText</key><string>Open PrivateType in any text field. Tap the gear above the keys for prediction, correction, and local learning. The keyboard stores its own options.</string></dict>
+        <dict><key>Type</key><string>PSTitleValueSpecifier</string><key>Title</key><string>Network access</string><key>Key</key><string>networkAccessStatus</string><key>DefaultValue</key><string>None</string></dict>
+        <dict><key>Type</key><string>PSTitleValueSpecifier</string><key>Title</key><string>Full Access</string><key>Key</key><string>fullAccessStatus</string><key>DefaultValue</key><string>Not required</string></dict>
+        <dict><key>Type</key><string>PSTitleValueSpecifier</string><key>Title</key><string>Version</string><key>Key</key><string>appVersion</string><key>DefaultValue</key><string>0.3.1</string></dict>
+    </array>
+</dict></plist>

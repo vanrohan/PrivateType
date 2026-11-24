@@ -1,0 +1,1022 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03EBE5B3B37F20B61F7FF5BD /* Dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D327CE597E21B8E04687D /* Dictionaries */; };
+		05C01B4FF5FC1903028CB085 /* EmojiSearchControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC371A7ADE80FAB4D25846 /* EmojiSearchControl.swift */; };
+		06825935D6EF7CD1848EF645 /* KeyboardInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879DE0935A1FBD307E30C63 /* KeyboardInteractionTests.swift */; };
+		06F5028C5F17C97BA005EA37 /* TouchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51987E0DCC2AB4C96B3D7BC /* TouchModel.swift */; };
+		097DA039E0702914B5D5E9C8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BEA514717CC4FF507FDBFB43 /* Settings.bundle */; };
+		0F55120C47747AA9BB3846E8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BF8D66620D452636838190C6 /* PrivacyInfo.xcprivacy */; };
+		183B03CD41993B2AD5F2A762 /* BytePairTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25C7F20591B3AD4E83AE6 /* BytePairTokenizer.swift */; };
+		1B0075BCA004D2D7A9D6413D /* Dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D327CE597E21B8E04687D /* Dictionaries */; };
+		1C7C008170ED3D4B94A774D0 /* TouchAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5282693189BA0ADA72409 /* TouchAlignment.swift */; };
+		1EDAEC84567F002F6C35585D /* SimpleKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB28F4DA11C85AAFC98393A6 /* SimpleKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		210D973E93AAC3358C67B009 /* SimpleKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A84D0FBFA012FCD6D39C15 /* SimpleKeyboardUITests.swift */; };
+		2200BDEE002CF4A7847302BC /* EmojiUsageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1ADDD03458AB908D510499 /* EmojiUsageTests.swift */; };
+		22D8107F3D5C1C3F29B0E815 /* KeyboardStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335EC2AEE296ECFA8D0D44D /* KeyboardStorageTests.swift */; };
+		23190EDAD19C37BD13D6B66D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298C1BF1D0D30EBA141A3628 /* Foundation.framework */; };
+		274D920D706ED77403A9CFB3 /* EmojiUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106E0F86172992469AA46315 /* EmojiUsage.swift */; };
+		2882EF18A0A1E47A7F061C6C /* AlternateCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C40ADF414A717CB7C8333 /* AlternateCharacters.swift */; };
+		2AED1FAF00337F197B01F277 /* KeyboardPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2900D4F88A03290681F38 /* KeyboardPlane.swift */; };
+		2B14901E1A0B74A289F8F5CF /* WordLexicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5B4BE3B13687461C86F98 /* WordLexicon.swift */; };
+		2E767BBCA57D63362E31E214 /* backend_xnnpack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EAA2360AEC2FDAE8E0C678 /* backend_xnnpack.xcframework */; };
+		31A9D63726BF34EFA43E3115 /* NeuralModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E42DF3B5E08BED0B5FC7CB /* NeuralModelTests.swift */; };
+		31F99CBE1165683B68809581 /* Dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D327CE597E21B8E04687D /* Dictionaries */; };
+		3280F307BABB63FD5F5A604C /* threadpool.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3ECC2BFC0696B5261D0138 /* threadpool.xcframework */; };
+		358DA5A4D5AF8C75DDEBA25F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298C1BF1D0D30EBA141A3628 /* Foundation.framework */; };
+		363EEEF47248B6E971260A4E /* KeyboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC929845B11C019C283BC6C0 /* KeyboardSettingsView.swift */; };
+		36549017BED25DE7DFE67998 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BF8D66620D452636838190C6 /* PrivacyInfo.xcprivacy */; };
+		3700BFC16CAAF4338CDA4D39 /* KeyboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC929845B11C019C283BC6C0 /* KeyboardSettingsView.swift */; };
+		3B2229E95131EFA1029713EA /* FUTO-LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = F2509F2ECF67746FC3AAA908 /* FUTO-LICENSE.md */; };
+		3CC8F61244082D00B4F5940A /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC53884C9ED0B7224B1C1A /* KeyboardLayout.swift */; };
+		40A4340E5A0869222EB6015E /* FUTO-LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = F2509F2ECF67746FC3AAA908 /* FUTO-LICENSE.md */; };
+		4ACA2A1463481AEC335FABA2 /* PredictionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CB00E98FAADFCC3D8F43C /* PredictionEngine.swift */; };
+		4D5CE83320F9ECD471676281 /* WordLexicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5B4BE3B13687461C86F98 /* WordLexicon.swift */; };
+		4F5167C00F5801E69D6BC7A1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6636A22842985D2DFEAF7 /* KeyboardViewController.swift */; };
+		5393AB6ABAAF1352616AC833 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC6636A22842985D2DFEAF7 /* KeyboardViewController.swift */; };
+		55BA6E2957604CCB3E63054D /* KeyboardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4227445BBE75999CE9C5ACD /* KeyboardStorage.swift */; };
+		5B69E73BEE2ADE4BF86DF46C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298C1BF1D0D30EBA141A3628 /* Foundation.framework */; };
+		5BEA9532051B9242A1DDD26A /* NeuralPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D77767696B1020448780D5 /* NeuralPredictor.swift */; };
+		5CEA2E28752E026470A47EE7 /* TypingBenchmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E054FCC5B24DD516D63C53B /* TypingBenchmarkTests.swift */; };
+		5DB5B454656ACBD619C414DE /* TouchModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EDCBA0BC5A2A51EA3AA654 /* TouchModelTests.swift */; };
+		5DEAEAECAACB07A551166243 /* FutoHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6DBDDB5970AAC2E622492 /* FutoHash.swift */; };
+		5FEAE107F282638B2E20A605 /* backend_xnnpack.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EAA2360AEC2FDAE8E0C678 /* backend_xnnpack.xcframework */; };
+		61F3D13BD96E2FB414584252 /* MultilingualSpelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D78FCD51AF074C2645E63 /* MultilingualSpelling.swift */; };
+		62C8E4236A166C3E9D1C6E09 /* TypingBenchmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017570E3206E0C415F722B1 /* TypingBenchmarkView.swift */; };
+		65E20ED9EF31598D400AA161 /* TouchDiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C461C6030BFEAF11F7124EE1 /* TouchDiagnosticsView.swift */; };
+		69F05EFDBC945E2501B0ED7E /* TouchDiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C461C6030BFEAF11F7124EE1 /* TouchDiagnosticsView.swift */; };
+		6D5AD7FE3D5A5482B93DE188 /* kernels_optimized.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A57021EB5D7893F4263E02 /* kernels_optimized.xcframework */; };
+		6DAA47F3B6B54EA8C150DDA9 /* TextRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC8FFEEDB21BBDDF162778 /* TextRules.swift */; };
+		743691067A2DB8DB444552E1 /* NeuralPredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321344EFF0FDA15C58398F2 /* NeuralPredictionService.swift */; };
+		7A183A1F1276824D238F322C /* KeyboardStartupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E545FB5972DC9E827B63B9 /* KeyboardStartupTests.swift */; };
+		828A8BF48216AE869A03AD61 /* AlternateCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C40ADF414A717CB7C8333 /* AlternateCharacters.swift */; };
+		82A883EE0F2D594D0075D837 /* TouchAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC5282693189BA0ADA72409 /* TouchAlignment.swift */; };
+		84BE82950B618EFC5C3DC123 /* InstalledKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89833B303E1EF480DFFE9A12 /* InstalledKeyboardUITests.swift */; };
+		8746B9DCE472388B4AD1FA6E /* NeuralInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A97273AFFD024449195C173 /* NeuralInputTests.swift */; };
+		88AFB3EDEFEC246DA068006E /* threadpool.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3ECC2BFC0696B5261D0138 /* threadpool.xcframework */; };
+		89D84D3DC5CF02A61BEA286E /* FutoHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B6DBDDB5970AAC2E622492 /* FutoHash.swift */; };
+		8BF46E8C98C82F566B583C68 /* TextRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC8FFEEDB21BBDDF162778 /* TextRules.swift */; };
+		8C6A536FF6BABE3294C048AE /* EmojiSearchControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC371A7ADE80FAB4D25846 /* EmojiSearchControl.swift */; };
+		93F4652687EDC660FCC8A4AE /* MultilingualSpelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D78FCD51AF074C2645E63 /* MultilingualSpelling.swift */; };
+		943F229E95D389F262A79D97 /* TypingBenchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C206659787FECF9076650C6B /* TypingBenchmark.swift */; };
+		9D3E186E200F50BA048222B4 /* PredictionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CB00E98FAADFCC3D8F43C /* PredictionEngine.swift */; };
+		A2DB6915A1F20ED92CF67D68 /* EmojiResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749AF80317591AD7BA334C5 /* EmojiResultsView.swift */; };
+		B0CEFF504B93CAA3C1EB7FBB /* executorch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09626F5606AA8943A47C3AB1 /* executorch.xcframework */; };
+		B0E4FCABB3C0C83D4DBACF7D /* KeyboardPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD2900D4F88A03290681F38 /* KeyboardPlane.swift */; };
+		B641E19664729FF2C03C8149 /* TouchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51987E0DCC2AB4C96B3D7BC /* TouchModel.swift */; };
+		B81DDFDFBEAFEFCDF9073AC4 /* NeuralPredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321344EFF0FDA15C58398F2 /* NeuralPredictionService.swift */; };
+		B8AC2874B72C7ADC6A4A252A /* KeyboardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4227445BBE75999CE9C5ACD /* KeyboardStorage.swift */; };
+		BA11776C2DC35669B1960105 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC53884C9ED0B7224B1C1A /* KeyboardLayout.swift */; };
+		BCA9B2269FC3528E776D42B5 /* EmojiCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51509E043B0E0C8114299DA /* EmojiCatalog.swift */; };
+		C141F10DFCDDAF9E95792836 /* TypingBenchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C206659787FECF9076650C6B /* TypingBenchmark.swift */; };
+		C637CD4EDBD10B617504BDCD /* KeyboardCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66F4E2C640FCB4BBF92BE9 /* KeyboardCoreTests.swift */; };
+		C9985207D21D2C95121E8691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4210BABE08C109E933DD32 /* Assets.xcassets */; };
+		CA82AD58A2886AA40E4B400A /* EmojiResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749AF80317591AD7BA334C5 /* EmojiResultsView.swift */; };
+		CCF2FD4B7678D4F0A183363D /* SimpleKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C88718EFD8BFCFB2E1772 /* SimpleKeyboardApp.swift */; };
+		E074E42A0787DD5B7B71E236 /* BytePairTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25C7F20591B3AD4E83AE6 /* BytePairTokenizer.swift */; };
+		E0E26DA662FE8A7A7E13006A /* EmojiUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106E0F86172992469AA46315 /* EmojiUsage.swift */; };
+		E4EF4E47208616BD1ADA8E6E /* MultilingualSpellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4A8B4723E0B7F230C10BC9 /* MultilingualSpellingTests.swift */; };
+		ED8464620A3755CEF5BDFBD1 /* FUTO-LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = F2509F2ECF67746FC3AAA908 /* FUTO-LICENSE.md */; };
+		EF6D28EFDF24D643D955FC07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298C1BF1D0D30EBA141A3628 /* Foundation.framework */; };
+		F03C238FD059815C329EE8C5 /* kernels_optimized.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A57021EB5D7893F4263E02 /* kernels_optimized.xcframework */; };
+		F2969119DB2BF336379FA29C /* executorch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09626F5606AA8943A47C3AB1 /* executorch.xcframework */; };
+		F37C7368730FCE4570C906E9 /* NeuralPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D77767696B1020448780D5 /* NeuralPredictor.swift */; };
+		F84DCD771C420EA7619FBDA7 /* EmojiCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51509E043B0E0C8114299DA /* EmojiCatalog.swift */; };
+		FA297270105545230F8A8437 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D37B90C85D39DF86761BE79 /* Settings.bundle */; };
+		FCA35C8BAEE8EEFDF7F701BD /* TypingBenchmarkInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D7E7804A5B713D4D16582 /* TypingBenchmarkInputTests.swift */; };
+		FD30AB775E3EE2D727A95F5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298C1BF1D0D30EBA141A3628 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F51ED4884BA9AFDD90AFAD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AB057BACC787933EDD688E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08C43D9BA0414B5D3579B502;
+			remoteInfo = SimpleKeyboard;
+		};
+		9FA694F37B7411D5F25D5737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AB057BACC787933EDD688E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08C43D9BA0414B5D3579B502;
+			remoteInfo = SimpleKeyboard;
+		};
+		CC22BFA1A66BF1A4A57EB204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AB057BACC787933EDD688E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5056CAA0D608B6EE6A3E8267;
+			remoteInfo = SimpleKeyboardExtension;
+		};
+		D5A433F3AC0751E1C4707EA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AB057BACC787933EDD688E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08C43D9BA0414B5D3579B502;
+			remoteInfo = SimpleKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		986EE6A283C1FAE6CAD0C347 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1EDAEC84567F002F6C35585D /* SimpleKeyboardExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09626F5606AA8943A47C3AB1 /* executorch.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = executorch.xcframework; path = Vendor/ExecuTorch/executorch.xcframework; sourceTree = "<group>"; };
+		106E0F86172992469AA46315 /* EmojiUsage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiUsage.swift; path = Core/EmojiUsage.swift; sourceTree = "<group>"; };
+		12669836BE396653DF28C6FA /* KeyboardCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1335EC2AEE296ECFA8D0D44D /* KeyboardStorageTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardStorageTests.swift; path = Tests/Core/KeyboardStorageTests.swift; sourceTree = "<group>"; };
+		133C88718EFD8BFCFB2E1772 /* SimpleKeyboardApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleKeyboardApp.swift; path = App/SimpleKeyboardApp.swift; sourceTree = "<group>"; };
+		14FC53884C9ED0B7224B1C1A /* KeyboardLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayout.swift; path = Core/KeyboardLayout.swift; sourceTree = "<group>"; };
+		298C1BF1D0D30EBA141A3628 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2AE5B4BE3B13687461C86F98 /* WordLexicon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordLexicon.swift; path = Core/WordLexicon.swift; sourceTree = "<group>"; };
+		2B3ECC2BFC0696B5261D0138 /* threadpool.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = threadpool.xcframework; path = Vendor/ExecuTorch/threadpool.xcframework; sourceTree = "<group>"; };
+		2B4210BABE08C109E933DD32 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = App/Assets.xcassets; sourceTree = "<group>"; };
+		3D9D327CE597E21B8E04687D /* Dictionaries */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Dictionaries; sourceTree = "<group>"; };
+		4017570E3206E0C415F722B1 /* TypingBenchmarkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypingBenchmarkView.swift; path = App/TypingBenchmarkView.swift; sourceTree = "<group>"; };
+		52A57021EB5D7893F4263E02 /* kernels_optimized.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = kernels_optimized.xcframework; path = Vendor/ExecuTorch/kernels_optimized.xcframework; sourceTree = "<group>"; };
+		56EDCBA0BC5A2A51EA3AA654 /* TouchModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchModelTests.swift; path = Tests/Core/TouchModelTests.swift; sourceTree = "<group>"; };
+		5B76FB9BDB4A1661BE8F155A /* SimpleKeysDeviceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleKeysDeviceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A84D0FBFA012FCD6D39C15 /* SimpleKeyboardUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleKeyboardUITests.swift; path = Tests/UI/SimpleKeyboardUITests.swift; sourceTree = "<group>"; };
+		624D78FCD51AF074C2645E63 /* MultilingualSpelling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultilingualSpelling.swift; path = Keyboard/MultilingualSpelling.swift; sourceTree = "<group>"; };
+		633C40ADF414A717CB7C8333 /* AlternateCharacters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlternateCharacters.swift; path = Core/AlternateCharacters.swift; sourceTree = "<group>"; };
+		68CC8FFEEDB21BBDDF162778 /* TextRules.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextRules.swift; path = Core/TextRules.swift; sourceTree = "<group>"; };
+		6B775B444FE4A59288740AC3 /* SimpleKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E42DF3B5E08BED0B5FC7CB /* NeuralModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuralModelTests.swift; path = Tests/iOS/NeuralModelTests.swift; sourceTree = "<group>"; };
+		77B6DBDDB5970AAC2E622492 /* FutoHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FutoHash.swift; path = Core/FutoHash.swift; sourceTree = "<group>"; };
+		7D3CB00E98FAADFCC3D8F43C /* PredictionEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PredictionEngine.swift; path = Core/PredictionEngine.swift; sourceTree = "<group>"; };
+		7DC5282693189BA0ADA72409 /* TouchAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchAlignment.swift; path = Core/TouchAlignment.swift; sourceTree = "<group>"; };
+		7E054FCC5B24DD516D63C53B /* TypingBenchmarkTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypingBenchmarkTests.swift; path = Tests/Core/TypingBenchmarkTests.swift; sourceTree = "<group>"; };
+		8817286A7931770063CAEF07 /* SimpleKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89833B303E1EF480DFFE9A12 /* InstalledKeyboardUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstalledKeyboardUITests.swift; path = Tests/DeviceUI/InstalledKeyboardUITests.swift; sourceTree = "<group>"; };
+		8A97273AFFD024449195C173 /* NeuralInputTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuralInputTests.swift; path = Tests/Core/NeuralInputTests.swift; sourceTree = "<group>"; };
+		8BCC371A7ADE80FAB4D25846 /* EmojiSearchControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiSearchControl.swift; path = Keyboard/EmojiSearchControl.swift; sourceTree = "<group>"; };
+		8D37B90C85D39DF86761BE79 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Keyboard/Settings.bundle; sourceTree = "<group>"; };
+		93EAA2360AEC2FDAE8E0C678 /* backend_xnnpack.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = backend_xnnpack.xcframework; path = Vendor/ExecuTorch/backend_xnnpack.xcframework; sourceTree = "<group>"; };
+		B2E545FB5972DC9E827B63B9 /* KeyboardStartupTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardStartupTests.swift; path = Tests/iOS/KeyboardStartupTests.swift; sourceTree = "<group>"; };
+		B321344EFF0FDA15C58398F2 /* NeuralPredictionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuralPredictionService.swift; path = Neural/NeuralPredictionService.swift; sourceTree = "<group>"; };
+		B61D7E7804A5B713D4D16582 /* TypingBenchmarkInputTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypingBenchmarkInputTests.swift; path = Tests/iOS/TypingBenchmarkInputTests.swift; sourceTree = "<group>"; };
+		B749AF80317591AD7BA334C5 /* EmojiResultsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiResultsView.swift; path = Keyboard/EmojiResultsView.swift; sourceTree = "<group>"; };
+		B7D77767696B1020448780D5 /* NeuralPredictor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuralPredictor.swift; path = Neural/NeuralPredictor.swift; sourceTree = "<group>"; };
+		BEA514717CC4FF507FDBFB43 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = App/Settings.bundle; sourceTree = "<group>"; };
+		BF8D66620D452636838190C6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = App/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C206659787FECF9076650C6B /* TypingBenchmark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypingBenchmark.swift; path = Core/TypingBenchmark.swift; sourceTree = "<group>"; };
+		C4227445BBE75999CE9C5ACD /* KeyboardStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardStorage.swift; path = Core/KeyboardStorage.swift; sourceTree = "<group>"; };
+		C461C6030BFEAF11F7124EE1 /* TouchDiagnosticsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchDiagnosticsView.swift; path = Keyboard/TouchDiagnosticsView.swift; sourceTree = "<group>"; };
+		CC929845B11C019C283BC6C0 /* KeyboardSettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardSettingsView.swift; path = Keyboard/KeyboardSettingsView.swift; sourceTree = "<group>"; };
+		CEB25C7F20591B3AD4E83AE6 /* BytePairTokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BytePairTokenizer.swift; path = Core/BytePairTokenizer.swift; sourceTree = "<group>"; };
+		DB1ADDD03458AB908D510499 /* EmojiUsageTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiUsageTests.swift; path = Tests/Core/EmojiUsageTests.swift; sourceTree = "<group>"; };
+		DF4A8B4723E0B7F230C10BC9 /* MultilingualSpellingTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultilingualSpellingTests.swift; path = Tests/iOS/MultilingualSpellingTests.swift; sourceTree = "<group>"; };
+		E51987E0DCC2AB4C96B3D7BC /* TouchModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchModel.swift; path = Core/TouchModel.swift; sourceTree = "<group>"; };
+		ECD2900D4F88A03290681F38 /* KeyboardPlane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardPlane.swift; path = Keyboard/KeyboardPlane.swift; sourceTree = "<group>"; };
+		F2509F2ECF67746FC3AAA908 /* FUTO-LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; name = "FUTO-LICENSE.md"; path = "Models/FUTO-LICENSE.md"; sourceTree = "<group>"; };
+		F51509E043B0E0C8114299DA /* EmojiCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiCatalog.swift; path = Core/EmojiCatalog.swift; sourceTree = "<group>"; };
+		F879DE0935A1FBD307E30C63 /* KeyboardInteractionTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardInteractionTests.swift; path = Tests/iOS/KeyboardInteractionTests.swift; sourceTree = "<group>"; };
+		FB28F4DA11C85AAFC98393A6 /* SimpleKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB66F4E2C640FCB4BBF92BE9 /* KeyboardCoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardCoreTests.swift; path = Tests/Core/KeyboardCoreTests.swift; sourceTree = "<group>"; };
+		FFC6636A22842985D2DFEAF7 /* KeyboardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardViewController.swift; path = Keyboard/KeyboardViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E817E6E4BB7E3FD10F802A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6D28EFDF24D643D955FC07 /* Foundation.framework in Frameworks */,
+				5FEAE107F282638B2E20A605 /* backend_xnnpack.xcframework in Frameworks */,
+				F2969119DB2BF336379FA29C /* executorch.xcframework in Frameworks */,
+				6D5AD7FE3D5A5482B93DE188 /* kernels_optimized.xcframework in Frameworks */,
+				88AFB3EDEFEC246DA068006E /* threadpool.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE8F5FA80A8FDE067DBE1EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23190EDAD19C37BD13D6B66D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD37D9EAC329A7750A3617B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B69E73BEE2ADE4BF86DF46C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01F83B1992CCDA1122F38BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD30AB775E3EE2D727A95F5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2FE39DF2BBF0AD575D4B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358DA5A4D5AF8C75DDEBA25F /* Foundation.framework in Frameworks */,
+				2E767BBCA57D63362E31E214 /* backend_xnnpack.xcframework in Frameworks */,
+				B0CEFF504B93CAA3C1EB7FBB /* executorch.xcframework in Frameworks */,
+				F03C238FD059815C329EE8C5 /* kernels_optimized.xcframework in Frameworks */,
+				3280F307BABB63FD5F5A604C /* threadpool.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3565DF2FC82048032A83FD72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B775B444FE4A59288740AC3 /* SimpleKeyboard.app */,
+				FB28F4DA11C85AAFC98393A6 /* SimpleKeyboardExtension.appex */,
+				12669836BE396653DF28C6FA /* KeyboardCoreTests.xctest */,
+				8817286A7931770063CAEF07 /* SimpleKeyboardUITests.xctest */,
+				5B76FB9BDB4A1661BE8F155A /* SimpleKeysDeviceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5397A7F91AE50CB4D885F964 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				298C1BF1D0D30EBA141A3628 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D7C9E9D511326246830290F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5397A7F91AE50CB4D885F964 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6E4B918EFBBA97A855E8DCB = {
+			isa = PBXGroup;
+			children = (
+				3565DF2FC82048032A83FD72 /* Products */,
+				D7C9E9D511326246830290F2 /* Frameworks */,
+				633C40ADF414A717CB7C8333 /* AlternateCharacters.swift */,
+				CEB25C7F20591B3AD4E83AE6 /* BytePairTokenizer.swift */,
+				F51509E043B0E0C8114299DA /* EmojiCatalog.swift */,
+				106E0F86172992469AA46315 /* EmojiUsage.swift */,
+				77B6DBDDB5970AAC2E622492 /* FutoHash.swift */,
+				14FC53884C9ED0B7224B1C1A /* KeyboardLayout.swift */,
+				C4227445BBE75999CE9C5ACD /* KeyboardStorage.swift */,
+				7D3CB00E98FAADFCC3D8F43C /* PredictionEngine.swift */,
+				68CC8FFEEDB21BBDDF162778 /* TextRules.swift */,
+				7DC5282693189BA0ADA72409 /* TouchAlignment.swift */,
+				E51987E0DCC2AB4C96B3D7BC /* TouchModel.swift */,
+				C206659787FECF9076650C6B /* TypingBenchmark.swift */,
+				2AE5B4BE3B13687461C86F98 /* WordLexicon.swift */,
+				B749AF80317591AD7BA334C5 /* EmojiResultsView.swift */,
+				8BCC371A7ADE80FAB4D25846 /* EmojiSearchControl.swift */,
+				ECD2900D4F88A03290681F38 /* KeyboardPlane.swift */,
+				CC929845B11C019C283BC6C0 /* KeyboardSettingsView.swift */,
+				FFC6636A22842985D2DFEAF7 /* KeyboardViewController.swift */,
+				624D78FCD51AF074C2645E63 /* MultilingualSpelling.swift */,
+				C461C6030BFEAF11F7124EE1 /* TouchDiagnosticsView.swift */,
+				B321344EFF0FDA15C58398F2 /* NeuralPredictionService.swift */,
+				B7D77767696B1020448780D5 /* NeuralPredictor.swift */,
+				4017570E3206E0C415F722B1 /* TypingBenchmarkView.swift */,
+				133C88718EFD8BFCFB2E1772 /* SimpleKeyboardApp.swift */,
+				FB66F4E2C640FCB4BBF92BE9 /* KeyboardCoreTests.swift */,
+				7E054FCC5B24DD516D63C53B /* TypingBenchmarkTests.swift */,
+				DB1ADDD03458AB908D510499 /* EmojiUsageTests.swift */,
+				1335EC2AEE296ECFA8D0D44D /* KeyboardStorageTests.swift */,
+				8A97273AFFD024449195C173 /* NeuralInputTests.swift */,
+				56EDCBA0BC5A2A51EA3AA654 /* TouchModelTests.swift */,
+				F879DE0935A1FBD307E30C63 /* KeyboardInteractionTests.swift */,
+				DF4A8B4723E0B7F230C10BC9 /* MultilingualSpellingTests.swift */,
+				75E42DF3B5E08BED0B5FC7CB /* NeuralModelTests.swift */,
+				B61D7E7804A5B713D4D16582 /* TypingBenchmarkInputTests.swift */,
+				B2E545FB5972DC9E827B63B9 /* KeyboardStartupTests.swift */,
+				60A84D0FBFA012FCD6D39C15 /* SimpleKeyboardUITests.swift */,
+				89833B303E1EF480DFFE9A12 /* InstalledKeyboardUITests.swift */,
+				BF8D66620D452636838190C6 /* PrivacyInfo.xcprivacy */,
+				2B4210BABE08C109E933DD32 /* Assets.xcassets */,
+				BEA514717CC4FF507FDBFB43 /* Settings.bundle */,
+				8D37B90C85D39DF86761BE79 /* Settings.bundle */,
+				3D9D327CE597E21B8E04687D /* Dictionaries */,
+				F2509F2ECF67746FC3AAA908 /* FUTO-LICENSE.md */,
+				93EAA2360AEC2FDAE8E0C678 /* backend_xnnpack.xcframework */,
+				09626F5606AA8943A47C3AB1 /* executorch.xcframework */,
+				52A57021EB5D7893F4263E02 /* kernels_optimized.xcframework */,
+				2B3ECC2BFC0696B5261D0138 /* threadpool.xcframework */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08C43D9BA0414B5D3579B502 /* SimpleKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEA44D57577437AA9052503 /* Build configuration list for PBXNativeTarget "SimpleKeyboard" */;
+			buildPhases = (
+				6F0B38939A3775B117037669 /* Sources */,
+				FB2FE39DF2BBF0AD575D4B7F /* Frameworks */,
+				5996379E02DDAF2B87FB4757 /* Resources */,
+				986EE6A283C1FAE6CAD0C347 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				513BE7256FC6382BF48DE0EE /* PBXTargetDependency */,
+			);
+			name = SimpleKeyboard;
+			productName = SimpleKeyboard;
+			productReference = 6B775B444FE4A59288740AC3 /* SimpleKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11B204792DA338E4294E9799 /* SimpleKeysDeviceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A1790EBEA2AB646CC9BE4C /* Build configuration list for PBXNativeTarget "SimpleKeysDeviceUITests" */;
+			buildPhases = (
+				2184D118F4D3E70A8E5451C2 /* Sources */,
+				BCE8F5FA80A8FDE067DBE1EE /* Frameworks */,
+				DE70531B24305639425FE6F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182EE23A01FF38589BB823FD /* PBXTargetDependency */,
+			);
+			name = SimpleKeysDeviceUITests;
+			productName = SimpleKeysDeviceUITests;
+			productReference = 5B76FB9BDB4A1661BE8F155A /* SimpleKeysDeviceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5056CAA0D608B6EE6A3E8267 /* SimpleKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A4BF7559C83DA4E5C45D8D /* Build configuration list for PBXNativeTarget "SimpleKeyboardExtension" */;
+			buildPhases = (
+				AB6CFF3CB973366A2AED2BD6 /* Sources */,
+				4E817E6E4BB7E3FD10F802A5 /* Frameworks */,
+				8E68609CDE164CBF375DDA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleKeyboardExtension;
+			productName = SimpleKeyboardExtension;
+			productReference = FB28F4DA11C85AAFC98393A6 /* SimpleKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9294C46DDDC7EF22779FAA4C /* SimpleKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90C78350F8048EA5A359D5A /* Build configuration list for PBXNativeTarget "SimpleKeyboardUITests" */;
+			buildPhases = (
+				15711D704D85582148C0A486 /* Sources */,
+				E01F83B1992CCDA1122F38BC /* Frameworks */,
+				40B1E5F74C9078948B67120B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA84107FFF3B39F6DF3DF703 /* PBXTargetDependency */,
+			);
+			name = SimpleKeyboardUITests;
+			productName = SimpleKeyboardUITests;
+			productReference = 8817286A7931770063CAEF07 /* SimpleKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C5C24D3876DF0076281A2D33 /* KeyboardCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D376BB830584990E12EAD4D0 /* Build configuration list for PBXNativeTarget "KeyboardCoreTests" */;
+			buildPhases = (
+				4CD7787C45F8AB74C2943D84 /* Sources */,
+				BD37D9EAC329A7750A3617B5 /* Frameworks */,
+				4FF5452450EEFDDF177375CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72D87791F1D75CC0627638F1 /* PBXTargetDependency */,
+			);
+			name = KeyboardCoreTests;
+			productName = KeyboardCoreTests;
+			productReference = 12669836BE396653DF28C6FA /* KeyboardCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89AB057BACC787933EDD688E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4C337EE65BA9D273C7F8C2F2 /* Build configuration list for PBXProject "SimpleKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6E4B918EFBBA97A855E8DCB;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3565DF2FC82048032A83FD72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08C43D9BA0414B5D3579B502 /* SimpleKeyboard */,
+				5056CAA0D608B6EE6A3E8267 /* SimpleKeyboardExtension */,
+				C5C24D3876DF0076281A2D33 /* KeyboardCoreTests */,
+				9294C46DDDC7EF22779FAA4C /* SimpleKeyboardUITests */,
+				11B204792DA338E4294E9799 /* SimpleKeysDeviceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40B1E5F74C9078948B67120B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF5452450EEFDDF177375CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F99CBE1165683B68809581 /* Dictionaries in Resources */,
+				ED8464620A3755CEF5BDFBD1 /* FUTO-LICENSE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5996379E02DDAF2B87FB4757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36549017BED25DE7DFE67998 /* PrivacyInfo.xcprivacy in Resources */,
+				C9985207D21D2C95121E8691 /* Assets.xcassets in Resources */,
+				097DA039E0702914B5D5E9C8 /* Settings.bundle in Resources */,
+				1B0075BCA004D2D7A9D6413D /* Dictionaries in Resources */,
+				3B2229E95131EFA1029713EA /* FUTO-LICENSE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E68609CDE164CBF375DDA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F55120C47747AA9BB3846E8 /* PrivacyInfo.xcprivacy in Resources */,
+				FA297270105545230F8A8437 /* Settings.bundle in Resources */,
+				03EBE5B3B37F20B61F7FF5BD /* Dictionaries in Resources */,
+				40A4340E5A0869222EB6015E /* FUTO-LICENSE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE70531B24305639425FE6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15711D704D85582148C0A486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210D973E93AAC3358C67B009 /* SimpleKeyboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2184D118F4D3E70A8E5451C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BE82950B618EFC5C3DC123 /* InstalledKeyboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD7787C45F8AB74C2943D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C637CD4EDBD10B617504BDCD /* KeyboardCoreTests.swift in Sources */,
+				5CEA2E28752E026470A47EE7 /* TypingBenchmarkTests.swift in Sources */,
+				2200BDEE002CF4A7847302BC /* EmojiUsageTests.swift in Sources */,
+				22D8107F3D5C1C3F29B0E815 /* KeyboardStorageTests.swift in Sources */,
+				8746B9DCE472388B4AD1FA6E /* NeuralInputTests.swift in Sources */,
+				5DB5B454656ACBD619C414DE /* TouchModelTests.swift in Sources */,
+				06825935D6EF7CD1848EF645 /* KeyboardInteractionTests.swift in Sources */,
+				E4EF4E47208616BD1ADA8E6E /* MultilingualSpellingTests.swift in Sources */,
+				31A9D63726BF34EFA43E3115 /* NeuralModelTests.swift in Sources */,
+				FCA35C8BAEE8EEFDF7F701BD /* TypingBenchmarkInputTests.swift in Sources */,
+				7A183A1F1276824D238F322C /* KeyboardStartupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0B38939A3775B117037669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828A8BF48216AE869A03AD61 /* AlternateCharacters.swift in Sources */,
+				E074E42A0787DD5B7B71E236 /* BytePairTokenizer.swift in Sources */,
+				BCA9B2269FC3528E776D42B5 /* EmojiCatalog.swift in Sources */,
+				E0E26DA662FE8A7A7E13006A /* EmojiUsage.swift in Sources */,
+				89D84D3DC5CF02A61BEA286E /* FutoHash.swift in Sources */,
+				3CC8F61244082D00B4F5940A /* KeyboardLayout.swift in Sources */,
+				55BA6E2957604CCB3E63054D /* KeyboardStorage.swift in Sources */,
+				4ACA2A1463481AEC335FABA2 /* PredictionEngine.swift in Sources */,
+				6DAA47F3B6B54EA8C150DDA9 /* TextRules.swift in Sources */,
+				82A883EE0F2D594D0075D837 /* TouchAlignment.swift in Sources */,
+				B641E19664729FF2C03C8149 /* TouchModel.swift in Sources */,
+				943F229E95D389F262A79D97 /* TypingBenchmark.swift in Sources */,
+				2B14901E1A0B74A289F8F5CF /* WordLexicon.swift in Sources */,
+				CA82AD58A2886AA40E4B400A /* EmojiResultsView.swift in Sources */,
+				8C6A536FF6BABE3294C048AE /* EmojiSearchControl.swift in Sources */,
+				B0E4FCABB3C0C83D4DBACF7D /* KeyboardPlane.swift in Sources */,
+				363EEEF47248B6E971260A4E /* KeyboardSettingsView.swift in Sources */,
+				5393AB6ABAAF1352616AC833 /* KeyboardViewController.swift in Sources */,
+				93F4652687EDC660FCC8A4AE /* MultilingualSpelling.swift in Sources */,
+				69F05EFDBC945E2501B0ED7E /* TouchDiagnosticsView.swift in Sources */,
+				B81DDFDFBEAFEFCDF9073AC4 /* NeuralPredictionService.swift in Sources */,
+				5BEA9532051B9242A1DDD26A /* NeuralPredictor.swift in Sources */,
+				62C8E4236A166C3E9D1C6E09 /* TypingBenchmarkView.swift in Sources */,
+				CCF2FD4B7678D4F0A183363D /* SimpleKeyboardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6CFF3CB973366A2AED2BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2882EF18A0A1E47A7F061C6C /* AlternateCharacters.swift in Sources */,
+				183B03CD41993B2AD5F2A762 /* BytePairTokenizer.swift in Sources */,
+				F84DCD771C420EA7619FBDA7 /* EmojiCatalog.swift in Sources */,
+				274D920D706ED77403A9CFB3 /* EmojiUsage.swift in Sources */,
+				5DEAEAECAACB07A551166243 /* FutoHash.swift in Sources */,
+				BA11776C2DC35669B1960105 /* KeyboardLayout.swift in Sources */,
+				B8AC2874B72C7ADC6A4A252A /* KeyboardStorage.swift in Sources */,
+				9D3E186E200F50BA048222B4 /* PredictionEngine.swift in Sources */,
+				8BF46E8C98C82F566B583C68 /* TextRules.swift in Sources */,
+				1C7C008170ED3D4B94A774D0 /* TouchAlignment.swift in Sources */,
+				06F5028C5F17C97BA005EA37 /* TouchModel.swift in Sources */,
+				C141F10DFCDDAF9E95792836 /* TypingBenchmark.swift in Sources */,
+				4D5CE83320F9ECD471676281 /* WordLexicon.swift in Sources */,
+				A2DB6915A1F20ED92CF67D68 /* EmojiResultsView.swift in Sources */,
+				05C01B4FF5FC1903028CB085 /* EmojiSearchControl.swift in Sources */,
+				2AED1FAF00337F197B01F277 /* KeyboardPlane.swift in Sources */,
+				3700BFC16CAAF4338CDA4D39 /* KeyboardSettingsView.swift in Sources */,
+				4F5167C00F5801E69D6BC7A1 /* KeyboardViewController.swift in Sources */,
+				61F3D13BD96E2FB414584252 /* MultilingualSpelling.swift in Sources */,
+				65E20ED9EF31598D400AA161 /* TouchDiagnosticsView.swift in Sources */,
+				743691067A2DB8DB444552E1 /* NeuralPredictionService.swift in Sources */,
+				F37C7368730FCE4570C906E9 /* NeuralPredictor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182EE23A01FF38589BB823FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeyboard;
+			target = 08C43D9BA0414B5D3579B502 /* SimpleKeyboard */;
+			targetProxy = 9FA694F37B7411D5F25D5737 /* PBXContainerItemProxy */;
+		};
+		513BE7256FC6382BF48DE0EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeyboardExtension;
+			target = 5056CAA0D608B6EE6A3E8267 /* SimpleKeyboardExtension */;
+			targetProxy = CC22BFA1A66BF1A4A57EB204 /* PBXContainerItemProxy */;
+		};
+		72D87791F1D75CC0627638F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeyboard;
+			target = 08C43D9BA0414B5D3579B502 /* SimpleKeyboard */;
+			targetProxy = 0F51ED4884BA9AFDD90AFAD5 /* PBXContainerItemProxy */;
+		};
+		CA84107FFF3B39F6DF3DF703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeyboard;
+			target = 08C43D9BA0414B5D3579B502 /* SimpleKeyboard */;
+			targetProxy = D5A433F3AC0751E1C4707EA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		060C989F29E80D3C6F811147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-lc++",
+					"-framework",
+					Accelerate,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10B303BAE5E4131FBA9561D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-lc++",
+					"-framework",
+					Accelerate,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		195C30EBB074332E677410D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.deviceuitests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleKeyboard;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C8C95A87A0F7CBD94BC5CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleKeyboard;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49BE1B98C90B6E514AD7AD97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleKeyboard;
+			};
+			name = Debug;
+		};
+		828BEEC9220CC1140D256FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.deviceuitests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleKeyboard;
+			};
+			name = Debug;
+		};
+		832A2431C1A4F05D746E2A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-lc++",
+					"-framework",
+					Accelerate,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.keyboard;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AAB6DA47A71058C40C72132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-lc++",
+					"-framework",
+					Accelerate,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.keyboard;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9624A94FB3BA37EDD99A7B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.coretests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(BUILT_PRODUCTS_DIR)/include";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleKeyboard.app/SimpleKeyboard";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3CA9AE35190082896E6A154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E0E83A93E1B2FCAB28C279E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E6AF6F843B12234029E1969C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonnesolutions.simplekeyboard.coretests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(BUILT_PRODUCTS_DIR)/include";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleKeyboard.app/SimpleKeyboard";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C337EE65BA9D273C7F8C2F2 /* Build configuration list for PBXProject "SimpleKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E83A93E1B2FCAB28C279E4 /* Debug */,
+				D3CA9AE35190082896E6A154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A1790EBEA2AB646CC9BE4C /* Build configuration list for PBXNativeTarget "SimpleKeysDeviceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195C30EBB074332E677410D6 /* Release */,
+				828BEEC9220CC1140D256FE3 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A4BF7559C83DA4E5C45D8D /* Build configuration list for PBXNativeTarget "SimpleKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AAB6DA47A71058C40C72132 /* Release */,
+				832A2431C1A4F05D746E2A64 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEA44D57577437AA9052503 /* Build configuration list for PBXNativeTarget "SimpleKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060C989F29E80D3C6F811147 /* Release */,
+				10B303BAE5E4131FBA9561D8 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D376BB830584990E12EAD4D0 /* Build configuration list for PBXNativeTarget "KeyboardCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9624A94FB3BA37EDD99A7B3F /* Release */,
+				E6AF6F843B12234029E1969C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90C78350F8048EA5A359D5A /* Build configuration list for PBXNativeTarget "SimpleKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C8C95A87A0F7CBD94BC5CE5 /* Release */,
+				49BE1B98C90B6E514AD7AD97 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89AB057BACC787933EDD688E /* Project object */;
+}

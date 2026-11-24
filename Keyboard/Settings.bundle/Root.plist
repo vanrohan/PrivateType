@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>PrivateType</string>
+			<key>FooterText</key>
+			<string>You can also change these options with the gear above the keys. No Full Access is required.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Neural predictions</string>
+			<key>Key</key>
+			<string>neuralPrediction</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Spell correction</string>
+			<key>Key</key>
+			<string>autocorrection</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Personalization</string>
+			<key>FooterText</key>
+			<string>Local learning stores words and word pairs on this device. Device backups can include them. Delete learned data with the gear above the keys.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Local learning</string>
+			<key>Key</key>
+			<string>learning</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Layout</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Keyboard size</string>
+			<key>Key</key>
+			<string>keyboardSize</string>
+			<key>DefaultValue</key>
+			<string>standard</string>
+			<key>Titles</key>
+			<array>
+				<string>Compact</string>
+				<string>Standard</string>
+				<string>Tall</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>compact</string>
+				<string>standard</string>
+				<string>tall</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>One-hand layout</string>
+			<key>Key</key>
+			<string>keyboardHand</string>
+			<key>DefaultValue</key>
+			<string>full</string>
+			<key>Titles</key>
+			<array>
+				<string>Full</string>
+				<string>Left</string>
+				<string>Right</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>full</string>
+				<string>left</string>
+				<string>right</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Number row</string>
+			<key>Key</key>
+			<string>numberRow</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Cursor speed</string>
+			<key>Key</key>
+			<string>cursorSpeed</string>
+			<key>DefaultValue</key>
+			<string>standard</string>
+			<key>Titles</key>
+			<array>
+				<string>Slow</string>
+				<string>Standard</string>
+				<string>Fast</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>slow</string>
+				<string>standard</string>
+				<string>fast</string>
+			</array>
+		</dict>
+        <dict><key>Type</key><string>PSGroupSpecifier</string><key>Title</key><string>Accessibility</string>
+            <key>FooterText</key><string>System text and contrast settings also apply. Key positions stay the same.</string></dict>
+        <dict><key>Type</key><string>PSToggleSwitchSpecifier</string><key>Title</key><string>Larger key labels</string>
+            <key>Key</key><string>largerKeyLabels</string><key>DefaultValue</key><false/></dict>
+        <dict><key>Type</key><string>PSToggleSwitchSpecifier</string><key>Title</key><string>High contrast</string>
+            <key>Key</key><string>highContrast</string><key>DefaultValue</key><false/></dict>
+
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,21 @@
+{
+  "source": "https://github.com/rspeer/wordfreq",
+  "version": "3.1.1",
+  "data_license": "CC-BY-SA-4.0",
+  "minimum_zipf": 2.5,
+  "source_sha256": "dffae8066b78dce0a6667cf5f58e567054f902674667090a7ac8a8a44628b05c",
+  "generated": {
+    "EnglishRanked.txt": {
+      "sha256": "51717e497d57ebb1eadabb182db0f8f104e0250671701d15438e4128b44eec00",
+      "entries": 52631
+    },
+    "EnglishWords.txt": {
+      "sha256": "70e285ccf5cbe8a7ad08079a8efa1101ea353934b11a525d80797ef837f69d87",
+      "entries": 52631
+    },
+    "EnglishSupplementCompletions.txt": {
+      "sha256": "edce576dde1159bf5f5f54a64b7230c9bf1b66833ec9c9c2be79ec53c1dbc30e",
+      "entries": 84082
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/LibreOffice/dictionaries",
+  "revision": "892f0f402cf8347aa3273f774365c094c310cf1b",
+  "generated": {
+    "AfrikaansWords.txt": {
+      "sha256": "8d321d6fb1e8f5bad0cf7444b266d44e32b26f2259b22b4e9337edab99186213",
+      "entries": 148667,
+      "bytes": 1684148
+    },
+    "GermanWords.txt": {
+      "sha256": "85fa40353f29e5cf90e3ab397d9075a6a0a2e9f0a99cb83684c11f85047ee0db",
+      "entries": 682310,
+      "bytes": 10164092
+    }
+  }
+}
