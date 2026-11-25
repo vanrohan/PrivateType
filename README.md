@@ -1,8 +1,20 @@
 # PrivateType
 
-PrivateType is an offline keyboard for iOS and iPadOS 18 or later. It offers multilingual suggestions, correction, and emoji search. Choose QWERTY or QWERTZ. The keyboard works with Full Access off.
+**Why give your keyboard internet access just to type?**
 
-See [setup and support](SUPPORT.md) and the [privacy policy](PRIVACY.md).
+PrivateType is an independent, offline keyboard for iOS and iPadOS 18 or later from Sonne Solutions, Ltd.
+Multilingual suggestions, spelling correction, and emoji search run on your device.
+Choose QWERTY or QWERTZ. No Full Access, no account, no typing uploads, and no analytics.
+
+## Keyboard privacy on iPhone and iPad
+
+| Keyboard | Full Access | Examples of data sent to the provider | Sources |
+| --- | --- | --- | --- |
+| **PrivateType** | Never requested. | PrivateType sends no typing or usage data to its developer. | [Privacy policy](PRIVACY.md) |
+| Google Gboard | Enables Google Search in the keyboard. | Gboard sends usage statistics, queries when you use Google Search, and audio when you use dictation. Saved words stay on your device. | [Google setup](https://support.google.com/gboard/answer/6380730?co=GENIE.Platform%3DiOS&hl=en), [Google privacy details](https://support.google.com/gboard/answer/9058584?co=GENIE.Platform%3DiOS&hl=en) |
+| Microsoft SwiftKey | Requests Full Access for its full set of features. | SwiftKey can collect usage data. It saves learned words and your typing model to OneDrive if you enable Backup & Sync. It can send short typing samples if you opt in to help Microsoft improve SwiftKey. | [Microsoft setup](https://support.microsoft.com/en-us/swiftkey-keyboard/why-does-my-microsoft-swiftkey-keyboard-need-full-access-in-ios), [App Store privacy details](https://apps.apple.com/us/app/microsoft-swiftkey-ai-keyboard/id911813648), [OneDrive backup](https://support.microsoft.com/en-us/swiftkey-keyboard/swiftkey-backup-and-sync-with-onedrive), [Typing data FAQ](https://support.microsoft.com/en-us/swiftkey-keyboard/microsoft-swiftkey-keyboard-sharing-your-typing-data-faq) |
+
+See [setup and support](SUPPORT.md) to start using PrivateType.
 
 ## Build from source
 
