@@ -101,7 +101,7 @@ private struct DictionaryLicensesView: View {
         let files = ["README_af_ZA.txt", "README_de_DE_frami.txt", "COPYING_GPLv2", "COPYING_GPLv3"]
         let resources = files.map { ("Dictionaries/Source", $0) } +
             ["Wordfreq-credits.txt", "Wordfreq-code-license.txt", "CC-BY-SA-4.0.txt"].map { ("Dictionaries/Western", $0) } +
-            [("", "FUTO-LICENSE.md")]
+            ["LICENSE", "Unicode-License.txt", "RuntimeLicenses.txt", "FUTO-LICENSE.md"].map { ("", $0) }
         return resources.compactMap { folder, name in
             guard let url = Bundle.main.url(forResource: name, withExtension: nil, subdirectory: folder.isEmpty ? nil : folder),
                   let data = try? Data(contentsOf: url) else { return nil }
@@ -113,6 +113,7 @@ private struct DictionaryLicensesView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Offline dictionary sources and licenses").font(.headline)
                 Text("Afrikaans uses Translate.org.za and Puzzlefoundry data. German uses the igerman98 and frami data.")
+                Link("Get dictionary source files", destination: URL(string: "https://github.com/vanrohan/PrivateType/tree/main/Dictionaries")!)
                 Text(notices).font(.footnote).textSelection(.enabled)
             }.frame(maxWidth: .infinity, alignment: .leading).padding(16)
         }.navigationTitle("Dictionary licenses").navigationBarTitleDisplayMode(.inline)
@@ -235,6 +236,8 @@ private struct HomeView: View {
                             Section {
                                 Text("Device backups can include stored data.")
                                 Text("Preview and keyboard data are separate.")
+                                Link("Read the privacy policy", destination: URL(string: "https://github.com/vanrohan/PrivateType/blob/main/PRIVACY.md")!)
+                                    .accessibilityIdentifier("privacyPolicyLink")
                             }
                         }
                         .navigationTitle("Privacy")

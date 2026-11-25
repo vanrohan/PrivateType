@@ -1,7 +1,7 @@
 # PrivateType privacy policy
 
-Sonne Solutions, Ltd. publishes PrivateType.
-This policy takes effect on January 19, 2027.
+SONNE SOLUTIONS (PTY) LTD publishes PrivateType.
+This policy takes effect on November 25, 2026. It applies to TestFlight and App Store builds.
 
 ## Typing stays local
 
@@ -51,4 +51,4 @@ Device backups can include stored PrivateType data under your backup settings.
 ## Contact and changes
 
 Email support@sonnesolutions.com with privacy questions or requests.
-Sonne Solutions, Ltd. updates this policy when the app's data practices change.
+SONNE SOLUTIONS (PTY) LTD updates this policy when the app's data practices change.

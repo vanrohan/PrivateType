@@ -1724,26 +1724,92 @@ final class KeyboardInteractionTests: XCTestCase {
             for correction in [UITextAutocorrectionType.default, .yes, .no] {
                 let policy = KeyboardInputPolicy(keyboardType: type, autocorrectionType: correction)
                 XCTAssertTrue(policy.allowsPredictions)
+                XCTAssertTrue(policy.allowsManualCorrections)
                 XCTAssertEqual(policy.allowsCorrectionAndLearning, correction != .no)
             }
         }
         let unspecified = KeyboardInputPolicy(keyboardType: nil, autocorrectionType: nil)
         XCTAssertTrue(unspecified.allowsPredictions)
+        XCTAssertTrue(unspecified.allowsManualCorrections)
         XCTAssertTrue(unspecified.allowsCorrectionAndLearning)
         for correction in [UITextAutocorrectionType.default, .yes, .no] {
             let policy = KeyboardInputPolicy(keyboardType: .URL, autocorrectionType: correction)
             XCTAssertTrue(policy.allowsPredictions)
+            XCTAssertFalse(policy.allowsManualCorrections)
             XCTAssertFalse(policy.allowsCorrectionAndLearning)
         }
         for type in [UIKeyboardType.emailAddress, .numberPad, .decimalPad, .phonePad, .asciiCapableNumberPad] {
             let policy = KeyboardInputPolicy(keyboardType: type, autocorrectionType: .yes)
             XCTAssertFalse(policy.allowsPredictions)
+            XCTAssertFalse(policy.allowsManualCorrections)
             XCTAssertFalse(policy.allowsCorrectionAndLearning)
         }
     }
 
     func testManualReplacementDoesNotLearnWhenTheHostDisablesCorrection() throws {
         try checkManualReplacementDoesNotLearn(keyboardType: .default, correction: .no)
+    }
+
+    func testSearchTyposOfferManualCorrectionsWhenHostDisablesAutocorrection() throws {
+        let proxy = TestDocumentProxy()
+        controller.documentProxy = proxy
+        controller.demoMode = false
+        controller.storage.autocorrection = true
+        controller.storage.learning = true
+        controller.registerLexiconEntry(input: "teh", replacement: "the")
+
+        for type in [UIKeyboardType.default, .webSearch] {
+            proxy.keyboardType = type
+            for (query, expected, alternatives) in [("apple trqck", "track", ["track", "truck"]),
+                                                    ("Falaxy", "Galaxy", ["Galaxy"])] {
+                proxy.text = String(query.dropLast())
+                controller.textDidChange(nil)
+                key(String(query.suffix(1)))
+                XCTAssertEqual(proxy.text, query)
+                controller.view.layoutIfNeeded()
+                let buttons = controller.suggestionButtons.filter { !$0.isHidden }
+                XCTAssertEqual(buttons.first?.currentTitle, TextRules.prefix(before: query))
+                for alternative in alternatives {
+                    XCTAssertTrue(buttons.contains { $0.currentTitle == alternative }, "\(type) \(query): \(buttons.compactMap(\.currentTitle))")
+                }
+                let button = try XCTUnwrap(buttons.first { $0.currentTitle == expected })
+                button.sendActions(for: .touchDown)
+                button.sendActions(for: .touchUpInside)
+                let prefix = query.dropLast(TextRules.prefix(before: query).count)
+                XCTAssertEqual(proxy.text, prefix + expected + " ")
+            }
+
+            proxy.text = "teh"
+            controller.textDidChange(nil)
+            key("space")
+            XCTAssertEqual(proxy.text, "teh ")
+        }
+
+        controller.viewWillDisappear(false)
+        XCTAssertTrue(controller.storage.multilingualMemory.words.isEmpty)
+    }
+
+    func testProtectedSearchWordDoesNotOfferSpellingCorrections() {
+        let proxy = TestDocumentProxy()
+        proxy.keyboardType = .webSearch
+        proxy.text = "Falaxy"
+        controller.documentProxy = proxy
+        controller.demoMode = false
+        controller.storage.setProtected("falaxy", enabled: true)
+        controller.textDidChange(nil)
+
+        XCTAssertFalse(controller.suggestionButtons.contains { $0.currentTitle == "Galaxy" })
+        XCTAssertEqual(controller.suggestionButtons.first?.currentTitle, "Falaxy")
+
+        controller.storage.setProtected("falaxy", enabled: false)
+        controller.textDidChange(nil)
+
+        XCTAssertTrue(controller.suggestionButtons.contains { !$0.isHidden && $0.currentTitle == "Galaxy" })
+
+        proxy.keyboardType = .URL
+        controller.textDidChange(nil)
+
+        XCTAssertFalse(controller.suggestionButtons.contains { !$0.isHidden && $0.currentTitle == "Galaxy" })
     }
 
     func testManualReplacementDoesNotLearnInURLFields() throws {

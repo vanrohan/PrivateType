@@ -20,7 +20,8 @@ struct KeyboardInputPolicy {
         }
     }
 
-    var allowsCorrectionAndLearning: Bool { allowsPredictions && keyboardType != .URL && autocorrectionType != .no }
+    var allowsManualCorrections: Bool { allowsPredictions && keyboardType != .URL }
+    var allowsCorrectionAndLearning: Bool { allowsManualCorrections && autocorrectionType != .no }
 }
 
 final class KeyboardViewController: UIInputViewController {
@@ -1030,7 +1031,9 @@ final class KeyboardViewController: UIInputViewController {
     }
 
     private func corrections(for word: String, manual: Bool = false) -> [String] {
-        guard allowsWords, TextRules.isWord(word), isPrivateTyping || !lexiconWords.contains(word.lowercased()),
+        let policy = inputPolicy
+        guard (manual ? policy.allowsManualCorrections : policy.allowsCorrectionAndLearning),
+              TextRules.isWord(word), isPrivateTyping || !lexiconWords.contains(word.lowercased()),
               !storage.protectedWords.contains(word.lowercased()) else { return [] }
         let language = spelling.writingLanguage(in: context, preference: storage.preferredLanguage)
         if manual { return spelling.manualCorrections(word, language: language) }

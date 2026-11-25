@@ -7,7 +7,7 @@
     <key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
     <key>CFBundlePackageType</key><string>XPC!</string>
     <key>CFBundleShortVersionString</key><string>0.3.11</string>
-    <key>CFBundleVersion</key><string>20</string>
+    <key>CFBundleVersion</key><string>21</string>
     <key>NSExtension</key><dict>
         <key>NSExtensionPointIdentifier</key><string>com.apple.keyboard-service</string>
         <key>NSExtensionPrincipalClass</key><string>$(PRODUCT_MODULE_NAME).KeyboardViewController</string>

@@ -2,7 +2,7 @@
 
 **Why give your keyboard internet access just to type?**
 
-PrivateType is an independent, offline keyboard for iOS and iPadOS 18 or later from Sonne Solutions, Ltd.
+PrivateType is an independent, offline keyboard for iOS and iPadOS 18 or later from SONNE SOLUTIONS (PTY) LTD.
 Multilingual suggestions, spelling correction, and emoji search run on your device.
 Choose QWERTY or QWERTZ. No Full Access, no account, no typing uploads, and no analytics.
 

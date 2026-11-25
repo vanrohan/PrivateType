@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03EBE5B3B37F20B61F7FF5BD /* Dictionaries in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D327CE597E21B8E04687D /* Dictionaries */; };
 		05C01B4FF5FC1903028CB085 /* EmojiSearchControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC371A7ADE80FAB4D25846 /* EmojiSearchControl.swift */; };
+		05F1C03299BBB1ABE0119703 /* RuntimeLicenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6B3BB73F217EE61D9563BB3 /* RuntimeLicenses.txt */; };
 		06825935D6EF7CD1848EF645 /* KeyboardInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879DE0935A1FBD307E30C63 /* KeyboardInteractionTests.swift */; };
 		06F5028C5F17C97BA005EA37 /* TouchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51987E0DCC2AB4C96B3D7BC /* TouchModel.swift */; };
 		097DA039E0702914B5D5E9C8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BEA514717CC4FF507FDBFB43 /* Settings.bundle */; };
@@ -73,6 +74,7 @@
 		B81DDFDFBEAFEFCDF9073AC4 /* NeuralPredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321344EFF0FDA15C58398F2 /* NeuralPredictionService.swift */; };
 		B8AC2874B72C7ADC6A4A252A /* KeyboardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4227445BBE75999CE9C5ACD /* KeyboardStorage.swift */; };
 		BA11776C2DC35669B1960105 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FC53884C9ED0B7224B1C1A /* KeyboardLayout.swift */; };
+		BB8F2FE7978B5135F1FE74A7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AF58285798D6203FDD5D5B76 /* LICENSE */; };
 		BCA9B2269FC3528E776D42B5 /* EmojiCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51509E043B0E0C8114299DA /* EmojiCatalog.swift */; };
 		C141F10DFCDDAF9E95792836 /* TypingBenchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C206659787FECF9076650C6B /* TypingBenchmark.swift */; };
 		C637CD4EDBD10B617504BDCD /* KeyboardCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66F4E2C640FCB4BBF92BE9 /* KeyboardCoreTests.swift */; };
@@ -88,6 +90,7 @@
 		F2969119DB2BF336379FA29C /* executorch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09626F5606AA8943A47C3AB1 /* executorch.xcframework */; };
 		F37C7368730FCE4570C906E9 /* NeuralPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D77767696B1020448780D5 /* NeuralPredictor.swift */; };
 		F84DCD771C420EA7619FBDA7 /* EmojiCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51509E043B0E0C8114299DA /* EmojiCatalog.swift */; };
+		FA2320487DFE59BC1C489AE7 /* Unicode-License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 538A99C0BDC59B6EA3DB3D1C /* Unicode-License.txt */; };
 		FA297270105545230F8A8437 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D37B90C85D39DF86761BE79 /* Settings.bundle */; };
 		FCA35C8BAEE8EEFDF7F701BD /* TypingBenchmarkInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D7E7804A5B713D4D16582 /* TypingBenchmarkInputTests.swift */; };
 		FD30AB775E3EE2D727A95F5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298C1BF1D0D30EBA141A3628 /* Foundation.framework */; };
@@ -152,6 +155,7 @@
 		3D9D327CE597E21B8E04687D /* Dictionaries */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Dictionaries; sourceTree = "<group>"; };
 		4017570E3206E0C415F722B1 /* TypingBenchmarkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypingBenchmarkView.swift; path = App/TypingBenchmarkView.swift; sourceTree = "<group>"; };
 		52A57021EB5D7893F4263E02 /* kernels_optimized.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = kernels_optimized.xcframework; path = Vendor/ExecuTorch/kernels_optimized.xcframework; sourceTree = "<group>"; };
+		538A99C0BDC59B6EA3DB3D1C /* Unicode-License.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = "Unicode-License.txt"; path = "docs/Unicode-License.txt"; sourceTree = "<group>"; };
 		56EDCBA0BC5A2A51EA3AA654 /* TouchModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchModelTests.swift; path = Tests/Core/TouchModelTests.swift; sourceTree = "<group>"; };
 		5B76FB9BDB4A1661BE8F155A /* SimpleKeysDeviceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleKeysDeviceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A84D0FBFA012FCD6D39C15 /* SimpleKeyboardUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleKeyboardUITests.swift; path = Tests/UI/SimpleKeyboardUITests.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 		8BCC371A7ADE80FAB4D25846 /* EmojiSearchControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiSearchControl.swift; path = Keyboard/EmojiSearchControl.swift; sourceTree = "<group>"; };
 		8D37B90C85D39DF86761BE79 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Keyboard/Settings.bundle; sourceTree = "<group>"; };
 		93EAA2360AEC2FDAE8E0C678 /* backend_xnnpack.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = backend_xnnpack.xcframework; path = Vendor/ExecuTorch/backend_xnnpack.xcframework; sourceTree = "<group>"; };
+		A6B3BB73F217EE61D9563BB3 /* RuntimeLicenses.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = RuntimeLicenses.txt; path = App/RuntimeLicenses.txt; sourceTree = "<group>"; };
+		AF58285798D6203FDD5D5B76 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B2E545FB5972DC9E827B63B9 /* KeyboardStartupTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardStartupTests.swift; path = Tests/iOS/KeyboardStartupTests.swift; sourceTree = "<group>"; };
 		B321344EFF0FDA15C58398F2 /* NeuralPredictionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuralPredictionService.swift; path = Neural/NeuralPredictionService.swift; sourceTree = "<group>"; };
 		B61D7E7804A5B713D4D16582 /* TypingBenchmarkInputTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypingBenchmarkInputTests.swift; path = Tests/iOS/TypingBenchmarkInputTests.swift; sourceTree = "<group>"; };
@@ -326,6 +332,9 @@
 				09626F5606AA8943A47C3AB1 /* executorch.xcframework */,
 				52A57021EB5D7893F4263E02 /* kernels_optimized.xcframework */,
 				2B3ECC2BFC0696B5261D0138 /* threadpool.xcframework */,
+				AF58285798D6203FDD5D5B76 /* LICENSE */,
+				538A99C0BDC59B6EA3DB3D1C /* Unicode-License.txt */,
+				A6B3BB73F217EE61D9563BB3 /* RuntimeLicenses.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -481,6 +490,9 @@
 				097DA039E0702914B5D5E9C8 /* Settings.bundle in Resources */,
 				1B0075BCA004D2D7A9D6413D /* Dictionaries in Resources */,
 				3B2229E95131EFA1029713EA /* FUTO-LICENSE.md in Resources */,
+				BB8F2FE7978B5135F1FE74A7 /* LICENSE in Resources */,
+				FA2320487DFE59BC1C489AE7 /* Unicode-License.txt in Resources */,
+				05F1C03299BBB1ABE0119703 /* RuntimeLicenses.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

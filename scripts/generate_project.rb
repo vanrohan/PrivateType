@@ -41,6 +41,9 @@ privacy = file_ref(project, root, File.join(root, 'App/PrivacyInfo.xcprivacy'), 
 [app, keyboard].each { |target| target.resources_build_phase.add_file_reference(privacy) }
 assets = file_ref(project, root, File.join(root, 'App/Assets.xcassets'), references)
 app.resources_build_phase.add_file_reference(assets)
+%w[LICENSE docs/Unicode-License.txt App/RuntimeLicenses.txt].each do |path|
+  app.resources_build_phase.add_file_reference(file_ref(project, root, File.join(root, path), references))
+end
 { app => 'App/Settings.bundle', keyboard => 'Keyboard/Settings.bundle' }.each do |target, path|
   ref = file_ref(project, root, File.join(root, path), references)
   ref.last_known_file_type = 'wrapper.plug-in'

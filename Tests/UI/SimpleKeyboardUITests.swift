@@ -122,6 +122,24 @@ final class SimpleKeyboardUITests: XCTestCase {
         XCTAssertTrue(finnish.isHittable)
     }
 
+    func testPrivacyPageShowsThePolicyLink() {
+        let app = XCUIApplication()
+        app.launchArguments = ["--ui-testing"]
+        XCUIDevice.shared.orientation = .portrait
+        app.launch()
+        let privacy = app.buttons["Privacy"]
+        reveal(privacy, in: app.collectionViews.firstMatch)
+        privacy.tap()
+        XCTAssertTrue(app.navigationBars["Privacy"].waitForExistence(timeout: 5))
+
+        let policy = app.descendants(matching: .any).matching(identifier: "privacyPolicyLink").firstMatch
+        for _ in 0..<8 where !policy.isHittable {
+            app.collectionViews.firstMatch.swipeUp()
+        }
+        XCTAssertTrue(policy.isHittable)
+        XCTAssertEqual(policy.label, "Read the privacy policy")
+    }
+
     func testHeaderButtonsStaySeparateFromLettersAndAcceptDeliberateTaps() {
         let app = preview()
         let keyboard = app.otherElements["simpleKeysKeyboard"]
